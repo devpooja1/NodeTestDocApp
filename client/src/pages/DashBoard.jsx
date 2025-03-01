@@ -13,7 +13,7 @@ const Logout=()=>{
     return(
         <>
       <div style={{width:"100%", backgroundColor:"lightblue", height:"40", textAlign:"center"}}>
-        <h4>WelCome to Dashboard </h4>{localStorage.getItem("username")}  Email: {localStorage.getItem("email")}</div> 
+        <h4>WelCome to Dashboard </h4>Name : {localStorage.getItem("username")}  Email: {localStorage.getItem("email")}</div> 
       <div style={{display:"flex"}}>
         <div style={{width:"15%",textDecoration:"none",listStyle:"none", backgroundColor:"lightblue", height:"100vh", color:"black", paddingTop:"50px"}}>
 <ul style={{listStyle:"none", textDecoration:"none"}}>
