@@ -12,7 +12,7 @@ mongoose.connect(dbcon).then((res)=>{ console.log("DB connected")})
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
-const DoctorRoute=require("./routes/adminRoute")
+const DoctorRoute=require("./routes/doctorRoute")
 
 app.use("/doctor", DoctorRoute)
 

@@ -1,4 +1,4 @@
-const DoctorModel=require("../models/adminModel")
+const DoctorModel=require("../models/doctorModel")
 const PatientModel=require("../models/patientModel")
 const bcrypt=require("bcryptjs")
 
