@@ -7,8 +7,8 @@ const DisplayData=()=>{
     const [mydata, setMydata]=useState([])
 
     const loadData=async()=>{
-        let api="http://localhost:8000/doctor/displaydata";
-        // let api="https://testnode-kr7v.onrender.com/doctor/displaydata";
+        // let api="http://localhost:8000/doctor/displaydata";
+        let api="https://nodetestdocapp.onrender.com/doctor/displaydata";
         try {
             const response=await axios.get(api)
             setMydata(response.data)

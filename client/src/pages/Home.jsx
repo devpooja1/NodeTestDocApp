@@ -66,7 +66,7 @@ const handleInput=(e)=>{
 
 const handleSubmit=async()=>{
 //let api="http://localhost:8000/doctor/patient";
-let api="https://testnode-kr7v.onrender.com/doctor/patient";
+let api="https://nodetestdocapp.onrender.com/doctor/patient";
 try {
    const response= await axios.post(api, input)
    console.log(response.data)

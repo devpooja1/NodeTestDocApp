@@ -10,8 +10,8 @@ const Login=()=>{
  const navigate=useNavigate()
 
     const handleSubmit=async()=>{
-        let api="http://localhost:8000/doctor/login";
-        // let api="https://testnode-kr7v.onrender.com/doctor/login";
+        // let api="http://localhost:8000/doctor/login";
+        let api="https://nodetestdocapp.onrender.com/doctor/login";
         try {
            const response= await axios.post(api, {email:email, password:password})
            console.log(response.data)
