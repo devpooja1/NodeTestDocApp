@@ -17,8 +17,8 @@ const Home=()=>{
 
 
     const loadData=async()=>{
-       let api="http://localhost:8000/doctor/displaydoctor";
-        // let api="https://testnode-kr7v.onrender.com/doctor/displaydoctor";
+      //  let api="http://localhost:8000/doctor/displaydoctor";
+        let api="https://nodetestdocapp.onrender.com/doctor/displaydoctor";
         try {
             const response=await axios.get(api)
             setMydata(response.data)
@@ -38,7 +38,7 @@ const ans=mydata.map((key)=>{
     return(
         <>
 
-<Card style={{ width: '18rem' }}>
+<Card style={{ width: '15rem' }}>
      <Card.Body>
         <Card.Title>{key.specilization}</Card.Title>
         <Card.Text>
@@ -46,7 +46,7 @@ const ans=mydata.map((key)=>{
         {key.email}<br/>
         {key.city}
         </Card.Text>
-        <Button variant="primary" onClick={()=>{handleShow(key._id)}}>Go Appointment</Button>
+        <Button variant="primary" onClick={()=>{handleShow(key._id)}}> Appointment</Button>
       </Card.Body>
     </Card>
     
@@ -77,35 +77,35 @@ try {
 }
     return(
         <>
-        <div style={{display:"flex", justifyContent:"space-between",flexWrap:"wrap",
+        <div style={{display:"flex", justifyContent:"space-around",flexWrap:"wrap",
           marginLeft:"50px", marginRight:"50px", marginTop:"30px", textAlign:"center"
          }}>
         {ans}   
         </div>
    
-        <Modal show={show} onHide={handleClose} style={{padding:"10px"}}>
-        <Modal.Header closeButton>
-          <Modal.Title>Appoiement Fome</Modal.Title>
+        <Modal show={show} onHide={handleClose} style={{padding:"10px",}}>
+        <Modal.Header closeButton style={{ margin: "20px" }}>
+          <Modal.Title>Appointment Form</Modal.Title>
         </Modal.Header>
-        <Form.Group className="mb-3">
-          <Form.Label htmlFor="disabledTextInput">Name</Form.Label>
+        <Form.Group className="mb-4" style={{ margin: "20px" }}>
+          <Form.Label htmlFor="disabledTextInput" >Patient Name</Form.Label>
           <Form.Control id="disabledTextInput"  name="name" onChange={handleInput} />
         </Form.Group>
-        <Form.Group className="mb-3">
-          <Form.Label htmlFor="disabledTextInput">Illness</Form.Label>
+        <Form.Group className="mb-4" style={{ margin: "20px" }}>
+          <Form.Label htmlFor="disabledTextInput">Concern</Form.Label>
           <Form.Control id="disabledTextInput" name="illness" onChange={handleInput} />
         </Form.Group>
-        <Form.Group className="mb-3">
+        <Form.Group className="mb-4" style={{ margin: "20px" }}>
           <Form.Label htmlFor="disabledTextInput">Email</Form.Label>
           <Form.Control id="disabledTextInput" name="email" onChange={handleInput} />
         </Form.Group>
-        <Form.Group className="mb-3">
+        <Form.Group className="mb-4"style={{ margin: "20px" }}>
           <Form.Label htmlFor="disabledTextInput">City</Form.Label>
           <Form.Control id="disabledTextInput"  name="city" onChange={handleInput} />
         </Form.Group>
         <Modal.Footer>
           <Button variant="primary" onClick={handleSubmit}>
-            Save 
+            Submit 
           </Button>
         </Modal.Footer>
       </Modal>

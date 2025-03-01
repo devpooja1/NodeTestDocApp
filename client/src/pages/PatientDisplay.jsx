@@ -38,7 +38,7 @@ const ans=mydata.map((key)=>{
 
     return(
         <>
-      <center>
+      <center style={{marginLeft:"60px"}}>
         <h1>Display Data</h1>
         <Table striped bordered hover>
       <thead>
@@ -46,7 +46,7 @@ const ans=mydata.map((key)=>{
          <th> Name</th>
           <th>Email</th>
           <th>City</th>
-          <th>Illness</th>
+          <th>Concern</th>
         </tr>
       </thead>
       <tbody>

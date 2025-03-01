@@ -36,16 +36,15 @@ const Registration=()=>{
         <Form.Group className="mb-3">
         <Form.Select  name="specilist" onChange={handleInput} >
       <option> Doctor Specializations</option>
-      <option value="physician">General Physician</option>
       <option value="cardiologist">Cardiologist </option>
-      <option value="neurologist"> Neurologist</option>
-      <option value="surgeon">  Orthopedic Surgeon</option>
-      <option value="pediatrician"> Pediatrician</option>
-      <option value="gynecologist"> Gynecologist</option>
-      <option value="dermatologist"> Dermatologist</option>
+      <option value="neurologist"> Gynecologist</option>
+      <option value="surgeon">Surgeon</option>
+      <option value="pediatrician">Dermatologist </option>
+      <option value="gynecologist"> Neurologist</option>
+      <option value="dermatologist">Pediatrician </option>
       <option value="ent"> ENT Specialist</option>
-      <option value="dentist">  Dentist</option>
-      <option value="nephrologist"> Nephrologist</option>
+      <option value="dentist">Dentist</option>
+      
       
     </Form.Select>
     </Form.Group>

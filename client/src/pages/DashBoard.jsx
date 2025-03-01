@@ -13,13 +13,12 @@ const Logout=()=>{
     return(
         <>
       <div style={{width:"100%", backgroundColor:"lightblue", height:"40", textAlign:"center"}}>
-        <h4>WelCome to AdminDasborad </h4>{localStorage.getItem("username")}  Email: {localStorage.getItem("email")}</div> 
+        <h4>WelCome to Dashboard </h4>{localStorage.getItem("username")}  Email: {localStorage.getItem("email")}</div> 
       <div style={{display:"flex"}}>
-        <div style={{width:"20%", backgroundColor:"blue", height:"100vh", color:"yellow", paddingTop:"50px"}}>
-<ul>
-    <li><Nav.Link as={Link} to="displaydata">Display User</Nav.Link></li><br/>
-    <li> <Nav.Link as={Link} to="update">Update</Nav.Link></li><br/>
-    <li> <Nav.Link as={Link} to="search">Search</Nav.Link></li><br/>
+        <div style={{width:"15%",textDecoration:"none",listStyle:"none", backgroundColor:"lightblue", height:"100vh", color:"black", paddingTop:"50px"}}>
+<ul style={{listStyle:"none", textDecoration:"none"}}>
+    <li ><Nav.Link as={Link} to="displaydata">Display Patient</Nav.Link></li><br/>
+    
     <li> <Button onClick={Logout}>Logout</Button></li><br/><br/>
 </ul>
 

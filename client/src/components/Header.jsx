@@ -3,8 +3,8 @@
 const Header=()=>{
     return(
         <>
-        <div style={{backgroundColor:"red", width:"100%", height:"40px",textAlign:"center", color:"yellow"}}>
-           Doctor Appointment System
+        <div style={{backgroundColor:"blue", width:"100%", height:"60px",textAlign:"center",paddingTop:"10px", color:"white"}}>
+          <h3> Doctor Appointment System</h3>
         </div>
         
         </>
